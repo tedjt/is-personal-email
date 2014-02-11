@@ -1,0 +1,19 @@
+{
+  "name": "is-personal-email",
+  "repo": "ivolo/is-personal-email",
+  "description": "Determine if an email is personal, like joe@gmail.com",
+  "version": "0.0.1",
+  "keywords": [
+    "email",
+    "personal",
+    "validate",
+    "fake"
+  ],
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "ivolo/personal-email-domains": "*"
+  }
+}
