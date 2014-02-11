@@ -13,6 +13,7 @@ describe('is-personal-email', function () {
     assert(personal('joe@yahoo.com'));
     assert(personal('asdsakdjad+2892@gmail.com'));
     assert(personal('normal@hotmail.com'));
+    assert(personal('normal@outlook.com'));
   });
 
   it('should not detect company emails', function () {
