@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivolo/is-personal-email.git"
+    "url": "https://github.com/tedjt/is-personal-email.git"
   },
   "keywords": [
     "email",
@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "personal-email-domains": "git+https://github.com/tedjt/personal-email-domains"
+    "personal-email-domains": "git://github.com/tedjt/personal-email-domains"
   },
   "devDependencies": {
     "mocha": "~1.17.1"
@@ -22,13 +22,7 @@
   "readmeFilename": "Readme.md",
   "description": "Determine if an email is a personal email address, like `joe@gmail.com`. You can use it to detect personal accounts in your signup process.",
   "bugs": {
-    "url": "https://github.com/ivolo/is-personal-email/issues"
+    "url": "https://github.com/tedjt/is-personal-email/issues"
   },
-  "homepage": "https://github.com/ivolo/is-personal-email",
-  "_id": "is-personal-email@0.0.1",
-  "dist": {
-    "shasum": "ce2123cea1be7dcaf8edf94b2e8614ae7523955b"
-  },
-  "_from": "is-personal-email@0.0.1",
-  "_resolved": "https://registry.npmjs.org/is-personal-email/-/is-personal-email-0.0.1.tgz"
+  "homepage": "https://github.com/tedjt/is-personal-email"
 }
