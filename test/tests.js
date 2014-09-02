@@ -20,4 +20,10 @@ describe('is-personal-email', function () {
     assert(!personal('ilya@segment.io'));
     assert(!personal('steve.ballmer@microsoft.com'));
   });
+
+  it('should handle international wildcard personal emails', function () {
+    assert(personal('ilay@hotmail.ru'));
+    assert(personal('steve.ballmer@yandex.gr'));
+    assert(!personal('steve.ballmer@yandexi.gr'));
+  });
 });

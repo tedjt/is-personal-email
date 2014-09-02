@@ -1,6 +1,13 @@
 
 var personal = require('personal-email-domains');
 
+var DOMAIN_REGEX = [
+  /hotmail\./,
+  /live\./,
+  /gmail\./,
+  /yandex\./
+]
+
 /**
  * Expose `isPersonalEmail`.
  */
@@ -23,5 +30,12 @@ personal.forEach(function (domain) { domains[domain] = true; });
 
 function isPersonalEmail (email) {
   var domain = email.split('@')[1].toLowerCase();
-  return domain in domains;
+  var domainTest = (domain in domains);
+  if (!domainTest) {
+    // check wildcards
+    domainTest = DOMAIN_REGEX.some(function(r) {
+      return r.test(domain);
+    });
+  }
+  return domainTest;
 }
